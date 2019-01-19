@@ -6,7 +6,7 @@ import glob
 class barcode:
     def __init__(self):
         input_event=glob.glob("/dev/input/event0") #assume you know where is yout barcode input
-        #print(evdev.InputDevice(i)) #to check your barcode
+        #print(evdev.InputDevice(input_event)) #to check your barcode
 
     def read(self):
         result = ""
